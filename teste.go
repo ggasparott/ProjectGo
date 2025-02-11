@@ -3,19 +3,21 @@ package main
 import "fmt"
 
 func main() {
-	var idade int
-	var nome string
-	var cidade string
+	var temp float64
+	
 
-	fmt.Println("Digite seu nome: ")
-	fmt.Scan(&nome)
+	fmt.Println("Digite a temperatura: ")
+	fmt.Scan(&temp)
 
-	fmt.Println("Digite sua cidade: ")
-	fmt.Scan(&cidade)
+	if temp > 30{
+		fmt.Printf("Esta muito quente\n")
+	} else if temp > 20 && temp <= 30 {
+		fmt.Printf("Temperatura agradavel")
+	} else {
+		fmt.Printf("Esta muito frio")
+	}
+	
+	
 
-	fmt.Println("Digite sua idade: ")
-	fmt.Scan(&idade)
-
-	fmt.Printf("Ola, %s! Voce tem %d anos e mora em %s.\n", nome, idade, cidade)
 
 }
