@@ -3,18 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	var temp float64
+	var num int
 	
 
-	fmt.Println("Digite a temperatura: ")
-	fmt.Scan(&temp)
+	fmt.Println("Digite um numero: ")
+	fmt.Scan(&num)
 
-	if temp > 30{
-		fmt.Printf("Esta muito quente\n")
-	} else if temp > 20 && temp <= 30 {
-		fmt.Printf("Temperatura agradavel")
-	} else {
-		fmt.Printf("Esta muito frio")
+	for i := 1; i <= num; i++ {
+		fmt.Print("\nContagem: ", i)
 	}
 	
 	
